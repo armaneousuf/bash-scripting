@@ -14,10 +14,10 @@ read -r -p "Do you want your summary? (yes/no): " answer
 sleep 1
 
 if [ "$answer" = "yes" ]; then
-whoami=$(whoami)
-whereami=$(pwd)
-today=$(date)
-echo "You're $whoami, aka $name. Your address is $whereami and today is $today"
+address=$(whoami)
+curr_dir=$(pwd)
+curr_date=$(date)
+echo "You're $address, aka $name. Your address is $curr_date and today is $curr_date"
 
 else 
   echo "Okay, maybe next time!"
