@@ -1,19 +1,16 @@
 #!/usr/bin/env bash
 
-echo "What's your name?"
-read -r name
+read -r -p "What's your name?: " name
 sleep 1
 
 echo "Hello, $name."
 
-echo "How old are you?"
-read -r age
+read -r -p "How old are you?: " age
 sleep 1
 
 echo "Does that mean you're $age years old?"
 
-echo "Do you want your summary? (yes/no)"
-read -r answer 
+read -r -p "Do you want your summary? (yes/no): " answer 
 sleep 1
 
 if [ "$answer" = "yes" ]; then
